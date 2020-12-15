@@ -1,12 +1,16 @@
 import React from "react";
+import Animation from "../../Components/Animation/Index";
 import './styles.css';
 import separator from '../../assets/images/separator.svg';
 import yoda from '../../assets/images/characters/yoda.png';
 import logo from '../../assets/images/logo.png';
 
+
 const Home = () => {
   return (
     <>
+      <Animation/>
+
       <div className="section-1">
         <div className="container">
           <header className="header">
