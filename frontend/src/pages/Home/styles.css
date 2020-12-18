@@ -158,6 +158,9 @@
 
 .section-3 .container .categories-container {
   height: 52vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .section-3 .container .categories-container .category-card {

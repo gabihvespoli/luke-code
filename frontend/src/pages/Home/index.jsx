@@ -78,6 +78,51 @@ const Home = () => {
                 <p>22 Cursos</p>
               </div>
             </div>
+            <div className="category-card">
+              <div className="category-card-image">
+                {/* <img src="" alt=""/> */}
+              </div>
+              <div className="category-card-content">
+                <h4>BACK-END</h4>
+                <p>22 Cursos</p>
+              </div>
+            </div>
+            <div className="category-card">
+              <div className="category-card-image">
+                {/* <img src="" alt=""/> */}
+              </div>
+              <div className="category-card-content">
+                <h4>BACK-END</h4>
+                <p>22 Cursos</p>
+              </div>
+            </div>
+            <div className="category-card">
+              <div className="category-card-image">
+                {/* <img src="" alt=""/> */}
+              </div>
+              <div className="category-card-content">
+                <h4>BACK-END</h4>
+                <p>22 Cursos</p>
+              </div>
+            </div>
+            <div className="category-card">
+              <div className="category-card-image">
+                {/* <img src="" alt=""/> */}
+              </div>
+              <div className="category-card-content">
+                <h4>BACK-END</h4>
+                <p>22 Cursos</p>
+              </div>
+            </div>
+            <div className="category-card">
+              <div className="category-card-image">
+                {/* <img src="" alt=""/> */}
+              </div>
+              <div className="category-card-content">
+                <h4>BACK-END</h4>
+                <p>22 Cursos</p>
+              </div>
+            </div>
           </section>
         </div>
       </div>
