@@ -269,6 +269,19 @@
 }
 
 @media (max-width: 382px) {
+  .animation h2 {
+    font-size: 52px;
+    animation: text-animation 5s forwards;
+  }
+
+  @keyframes text-animation {
+    50% {
+      opacity: 100%;
+      letter-spacing: 10px;
+      margin-bottom: 20px;
+    }
+  }
+
   .section-1 .container .header img {
     width: 15%;
   }
