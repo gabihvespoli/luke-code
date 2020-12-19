@@ -1,12 +1,20 @@
 import React from 'react';
-import Animation from '../../Components/Animation/Index';
-import CardCourse from '../../Components/CardCourse/index';
+import Animation from '../../Components/Animation';
+import CardCourse from '../../Components/CardCourse';
+import CardCategory from '../../Components/CardCategory';
 
 import './styles.css';
 import logo from '../../assets/images/logo.png';
 
 import yoda from '../../assets/images/characters/yoda.png';
 import separator from '../../assets/images/separator.svg';
+
+import backend from '../../assets/images/categories/backend-solid.svg';
+import database from '../../assets/images/categories/database-solid.svg';
+import security from '../../assets/images/categories/security-solid.svg';
+import mobile from '../../assets/images/categories/mobile-alt-solid.svg';
+import frontend from '../../assets/images/categories/front-solid.svg';
+import cloud from '../../assets/images/categories/cloud-solid.svg';
 
 import courseReactRedux from '../../assets/images/courses/react-redux.jpg';
 import coursePhp from '../../assets/images/courses/php.jpg';
@@ -26,6 +34,9 @@ const Home = () => {
             <nav>
               <button>FAZER LOGIN</button>
               <button>INSCREVA-SE</button>
+              <button className="btn-menu">
+                <i className="fas fa-bars"/>
+              </button>
             </nav>
           </header>
           <main>
@@ -69,60 +80,12 @@ const Home = () => {
         <div className="container">
           <h2>O que oferecemos para você</h2>
           <section className="categories-container">
-            <div className="category-card">
-              <div className="category-card-image">
-                {/* <img src="" alt=""/> */}
-              </div>
-              <div className="category-card-content">
-                <h4>BACK-END</h4>
-                <p>22 Cursos</p>
-              </div>
-            </div>
-            <div className="category-card">
-              <div className="category-card-image">
-                {/* <img src="" alt=""/> */}
-              </div>
-              <div className="category-card-content">
-                <h4>BACK-END</h4>
-                <p>22 Cursos</p>
-              </div>
-            </div>
-            <div className="category-card">
-              <div className="category-card-image">
-                {/* <img src="" alt=""/> */}
-              </div>
-              <div className="category-card-content">
-                <h4>BACK-END</h4>
-                <p>22 Cursos</p>
-              </div>
-            </div>
-            <div className="category-card">
-              <div className="category-card-image">
-                {/* <img src="" alt=""/> */}
-              </div>
-              <div className="category-card-content">
-                <h4>BACK-END</h4>
-                <p>22 Cursos</p>
-              </div>
-            </div>
-            <div className="category-card">
-              <div className="category-card-image">
-                {/* <img src="" alt=""/> */}
-              </div>
-              <div className="category-card-content">
-                <h4>BACK-END</h4>
-                <p>22 Cursos</p>
-              </div>
-            </div>
-            <div className="category-card">
-              <div className="category-card-image">
-                {/* <img src="" alt=""/> */}
-              </div>
-              <div className="category-card-content">
-                <h4>BACK-END</h4>
-                <p>22 Cursos</p>
-              </div>
-            </div>
+            <CardCategory image={backend} title="BACK-END" courses="22 cursos" color="Crimson"/>
+            <CardCategory image={database} title="BANCO DE DADOS" courses="2 cursos" color="Goldenrod"/>
+            <CardCategory image={security} title="SEGURANÇA" courses="22 cursos" color="BlueViolet"/>
+            <CardCategory image={mobile} title="MOBILE" courses="7 cursos" color="DarkBlue"/>
+            <CardCategory image={frontend} title="FRONT-END" courses="18 cursos" color="DarkGreen"/>
+            <CardCategory image={cloud} title="CLOUD-COMPUTING" courses="22 cursos" color="OrangeRed"/>
           </section>
         </div>
       </div>

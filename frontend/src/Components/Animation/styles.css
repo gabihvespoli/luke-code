@@ -27,10 +27,10 @@
   color: white;
   font-size: 64px;
 
-  animation: texto 2s forwards;
+  animation: text-animation 2s forwards;
 }
 
-@keyframes texto {
+@keyframes text-animation {
   0% {
     opacity: 100%;
     letter-spacing: 0;
