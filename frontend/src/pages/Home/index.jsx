@@ -1,5 +1,5 @@
 import React from 'react';
-import Animation from '../../Components/Animation/index';
+import Animation from '../../Components/Animation/Index';
 import CardCourse from '../../Components/CardCourse';
 import CardCategory from '../../Components/CardCategory';
 
