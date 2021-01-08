@@ -19,7 +19,9 @@ import cloud from '../../assets/images/categories/cloud-solid.svg';
 import courseReactRedux from '../../assets/images/courses/react-redux.jpg';
 import coursePhp from '../../assets/images/courses/php.jpg';
 import courseFlutter from '../../assets/images/courses/flutter.jpg';
-
+import markRight from '../../assets/images/mark-right.svg';
+import markLeft from '../../assets/images/mark-left.svg';
+import userReviewImage from '../../assets/images/users/user.png'
 
 const Home = () => {
   return (
@@ -93,11 +95,28 @@ const Home = () => {
       <div className="section-4">
         <div className="box">
           <h2>Depoimentos</h2>
-
+          <div className="image-review">
+            <img src={userReviewImage} alt="Joaquim"/>
+          </div>
+          <div className="review">
+            <img src={markLeft} alt=""/>
+            <p>
+              Professor extremamente didático e com amplos conhecimentos <br />
+              e o curso tem conteúdo que permite exercitar o que é ensinado!
+            </p>
+            <img src={markRight} alt=""/>
+          </div>
+          <div className="user-review">
+            <h4>
+              Joaquim
+            </h4>
+          </div>
         </div>
       </div>
       <footer>
-        &copy; { new Date().getFullYear() } Luke Code &middot; Alguns direitos reservados
+        <div className="box">
+          &copy; { new Date().getFullYear() } Luke Code &middot; Alguns direitos reservados
+        </div>
       </footer>
     </>
   );
